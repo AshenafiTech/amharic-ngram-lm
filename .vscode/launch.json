@@ -1,0 +1,37 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Web app (Task 4)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app/server.py",
+      "args": ["--port", "8000"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}" },
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Terminal app (Task 4)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app/cli.py",
+      "args": ["--order", "3"],
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}" },
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Build artifacts (download + train)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/build_artifacts.py",
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}" },
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

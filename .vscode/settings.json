@@ -1,0 +1,27 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "terminal.integrated.env.osx": { "PYTHONPATH": "${workspaceFolder}" },
+  "terminal.integrated.env.linux": { "PYTHONPATH": "${workspaceFolder}" },
+  "terminal.integrated.env.windows": { "PYTHONPATH": "${workspaceFolder}" },
+
+  // artifacts/ (5.9 GB) and data/ (1 GB) are generated; keep VS Code from indexing them
+  "files.watcherExclude": {
+    "**/artifacts/**": true,
+    "**/data/**": true,
+    "**/.venv/**": true
+  },
+  "search.exclude": {
+    "**/artifacts": true,
+    "**/data": true,
+    "**/.venv": true
+  },
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.ipynb_checkpoints": true
+  },
+
+  "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans Ethiopic', 'Kefa', 'Nyala', sans-serif"
+}
